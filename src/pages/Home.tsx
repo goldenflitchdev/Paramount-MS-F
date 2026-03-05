@@ -1,5 +1,6 @@
 import { ArrowRight, ShieldCheck, Factory, Settings, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/paths';
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/paramount/images/hero cover.jpg" 
+            src={getAssetPath('images/hero cover.jpg')} 
             alt="Paramount Metal Furnitures Hero" 
             className="w-full h-full object-cover"
           />
@@ -70,7 +71,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/paramount/images/para-furniture.jpg" 
+                  src={getAssetPath('images/para-furniture.jpg')} 
                   alt="Premium Metal Furniture" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -153,10 +154,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Domestic Cabinets', img: '/paramount/images/Cabinet_with_Locker_Drawer.png', desc: 'Premium wardrobes with lockers and mirrors.' },
-              { title: 'Office Cabinets', img: '/paramount/images/Glass_Door_Cabinet.png', desc: 'Storewells, filing cabinets, and glass door units.' },
-              { title: 'Italian Series', img: '/paramount/images/Italian_Cabinet.png', desc: 'Modern aesthetics with Italian hinges and shoe drawers.' },
-              { title: 'Office Tables', img: '/paramount/images/Executive_Table.png', desc: 'Executive and single tables with Nova Pan tops.' }
+              { title: 'Domestic Cabinets', img: getAssetPath('images/Cabinet_with_Locker_Drawer.png'), desc: 'Premium wardrobes with lockers and mirrors.' },
+              { title: 'Office Cabinets', img: getAssetPath('images/Glass_Door_Cabinet.png'), desc: 'Storewells, filing cabinets, and glass door units.' },
+              { title: 'Italian Series', img: getAssetPath('images/Italian_Cabinet.png'), desc: 'Modern aesthetics with Italian hinges and shoe drawers.' },
+              { title: 'Office Tables', img: getAssetPath('images/Executive_Table.png'), desc: 'Executive and single tables with Nova Pan tops.' }
             ].map((category, idx) => (
               <Link to="/catalog" key={idx} className="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-silver-300/50 hover:shadow-xl hover:border-burnt-500/30 transition-all duration-300">
                 <div className="aspect-[4/5] overflow-hidden relative bg-white p-6 flex items-center justify-center">
