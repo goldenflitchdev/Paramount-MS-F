@@ -8,10 +8,9 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://picsum.photos/seed/steel-factory-hero/1920/1080" 
-            alt="Steel Manufacturing Facility" 
+            src="/images/hero cover.jpg" 
+            alt="Paramount Metal Furnitures Hero" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-charcoal-900/85 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/20 to-transparent"></div>
