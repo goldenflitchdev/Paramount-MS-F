@@ -8,12 +8,10 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/Slotted_Angle_Rack.png" 
+            src="/images/hero cover.jpg" 
             alt="Paramount Metal Furnitures Hero" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-charcoal-900/85 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/20 to-transparent"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
@@ -72,8 +70,8 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/welding-sparks/800/600" 
-                  alt="Welding Process" 
+                  src="/images/para-furniture.jpg" 
+                  alt="Premium Metal Furniture" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
